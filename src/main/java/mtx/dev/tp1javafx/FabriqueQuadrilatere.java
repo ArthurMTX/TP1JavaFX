@@ -16,6 +16,6 @@ public class FabriqueQuadrilatere {
             throw new RuntimeException(e);
         }
 
-        throw new IllegalArgumentException("Type de quadrilatère inconnu. Veuillez choisir entre Carre, CerfVolant, Losange, Parallelogramme, Rectangle ou Trapeze.");
+        throw new IllegalArgumentException("Type de quadrilatère inconnu. Veuillez choisir entre Carré, Cerf-Volant, Losange, Parallèlogramme, Rectangle ou Trapèze.");
     }
 }

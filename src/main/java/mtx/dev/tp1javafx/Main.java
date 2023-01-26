@@ -3,13 +3,14 @@ package mtx.dev.tp1javafx;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.*;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
+
+import java.text.Normalizer;
 
 public class Main extends Application{
     double width = java.awt.Toolkit.getDefaultToolkit().getScreenSize().getWidth(); // Récupération de la taille de l'écran
@@ -19,7 +20,7 @@ public class Main extends Application{
     double blockSize = squareSize/50; // Taille d'un bloc
 
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stage) {
         Scene scene = new Scene(root, width, height);
 
         stage.setTitle("TPJavaFX");
@@ -35,28 +36,19 @@ public class Main extends Application{
         comboBox.setLayoutY(10);
         comboBox.setOnAction(e -> {
             String shape = comboBox.getValue();
-            shape = shape.replace("é", "e");
-            shape = shape.replace("è", "e");
-            shape = shape.replace("-", "");
-            shape = shape.replace(" ", "");
+            shape = Normalizer.normalize(shape, Normalizer.Form.NFD)
+                    .replaceAll("[^\\p{ASCII}]", "")
+                    .replaceAll("-", "")
+                    .replaceAll("\\s", "");
 
-            // Création de champs de saisie pour les coordonnées des points
-            TextField textFieldA = new TextField();
-            textFieldA.setLayoutX(10);
-            textFieldA.setLayoutY(40);
-            textFieldA.setPromptText("Point A");
-            TextField textFieldB = new TextField();
-            textFieldB.setLayoutX(10);
-            textFieldB.setLayoutY(70);
-            textFieldB.setPromptText("Point B");
-            TextField textFieldC = new TextField();
-            textFieldC.setLayoutX(10);
-            textFieldC.setLayoutY(100);
-            textFieldC.setPromptText("Point C");
-            TextField textFieldD = new TextField();
-            textFieldD.setLayoutX(10);
-            textFieldD.setLayoutY(130);
-            textFieldD.setPromptText("Point D");
+            TextField[] textFields = new TextField[4];
+
+            for (int i = 0; i < textFields.length; i++) {
+                textFields[i] = new TextField();
+                textFields[i].setLayoutX(10);
+                textFields[i].setLayoutY(40 + 30 * i);
+                textFields[i].setPromptText("Point " + (char)('A' + i));
+            }
 
             // Champ select qui permet de choisir le type de point
             ComboBox<String> comboBoxPoint = new ComboBox<>();
@@ -72,22 +64,46 @@ public class Main extends Application{
                 buttonCreateQuadri.setLayoutX(10);
                 buttonCreateQuadri.setLayoutY(190);
                 buttonCreateQuadri.setOnAction(e3 -> {
-                    String[] pointA = textFieldA.getText().split(",");
-                    String[] pointB = textFieldB.getText().split(",");
-                    String[] pointC = textFieldC.getText().split(",");
-                    String[] pointD = textFieldD.getText().split(",");
-                    InterPoint A = FabriquePoint.createPoint(Double.parseDouble(pointA[0]), Double.parseDouble(pointA[1]), point);
-                    InterPoint B = FabriquePoint.createPoint(Double.parseDouble(pointB[0]), Double.parseDouble(pointB[1]), point);
-                    InterPoint C = FabriquePoint.createPoint(Double.parseDouble(pointC[0]), Double.parseDouble(pointC[1]), point);
-                    InterPoint D = FabriquePoint.createPoint(Double.parseDouble(pointD[0]), Double.parseDouble(pointD[1]), point);
-                    Quadrilatere quadrilatere = FabriqueQuadrilatere.createQuadrilatere(A, B, C, D, finalShape);
-                    displayShape(quadrilatere, Color.RED);
+                    try {
+                        InterPoint A = FabriquePoint.createPoint(Double.parseDouble(textFields[0].getText().split(",")[0]),
+                                Double.parseDouble(textFields[0].getText().split(",")[1]), point);
+                        InterPoint B = FabriquePoint.createPoint(Double.parseDouble(textFields[1].getText().split(",")[0]),
+                                Double.parseDouble(textFields[1].getText().split(",")[1]), point);
+                        InterPoint C = FabriquePoint.createPoint(Double.parseDouble(textFields[2].getText().split(",")[0]),
+                                Double.parseDouble(textFields[2].getText().split(",")[1]), point);
+                        InterPoint D = FabriquePoint.createPoint(Double.parseDouble(textFields[3].getText().split(",")[0]),
+                                Double.parseDouble(textFields[3].getText().split(",")[1]), point);
+                        Quadrilatere quadrilatere = FabriqueQuadrilatere.createQuadrilatere(A, B, C, D, finalShape);
+                        displayShape(quadrilatere, Color.RED);
+                    } catch (NumberFormatException eNumber) {
+                        String variableName = switch (eNumber.getStackTrace()[0].getMethodName()) {
+                            case "createPointA" -> "A";
+                            case "createPointB" -> "B";
+                            case "createPointC" -> "C";
+                            case "createPointD" -> "D";
+                            default -> "inconnu";
+                        };
+                        String errorException = eNumber.getMessage();
+                        String errorMessage;
+                        if (variableName.equals("inconnu")) {
+                            errorMessage = "Une erreur s'est produite lors de la création du quadrilatère : " + errorException;
+                        } else {
+                            errorMessage = "Une erreur s'est produite lors de la création du point " + variableName + " : " + errorException;
+                        }
+                        Text errorTextField = new Text(errorMessage);
+                        errorTextField.setText(errorMessage);
+                        errorTextField.setStyle("-fx-text-fill: red;");
+                        errorTextField.setLayoutX(10);
+                        errorTextField.setLayoutY(250);
+                        root.getChildren().add(errorTextField);
+                        System.out.println(errorMessage);
+                    }
                 });
                 root.getChildren().add(buttonCreateQuadri);
             });
-            root.getChildren().addAll(textFieldA, textFieldB, textFieldC, textFieldD, comboBoxPoint);
+            root.getChildren().addAll(textFields);
+            root.getChildren().add(comboBoxPoint);
         });
-
         root.getChildren().add(comboBox);
     }
 
