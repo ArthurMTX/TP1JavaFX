@@ -1,8 +1,8 @@
 package mtx.dev.tp1javafx;
 
 public class Point2 implements InterPoint {
-    private final double x;
-    private final double y;
+    private double x;
+    private double y;
     public Point2(double angle, double radius) {
         this.x = radius * Math.cos(angle);
         this.y = radius * Math.sin(angle);
@@ -24,6 +24,14 @@ public class Point2 implements InterPoint {
         double distanceX = this.x - autrePoint.getX();
         double distanceY = this.y - autrePoint.getY();
         return Math.sqrt(distanceX*distanceX + distanceY*distanceY);
+    }
+
+    public void setY(double y) {
+        this.y = y;
+    }
+
+    public void setX(double x) {
+        this.x = x;
     }
 
     public static double angle(Point2 A, Point2 B, Point2 C) {

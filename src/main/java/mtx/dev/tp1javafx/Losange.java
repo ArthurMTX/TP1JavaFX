@@ -23,7 +23,7 @@ public class Losange extends Quadrilatere {
         largeur = point2.calculerDistance(point4);
 
         if (!isValidShape()) {
-            //throw new IllegalArgumentException("Les points ne forment pas un losange.");
+           throw new IllegalArgumentException("Les points ne forment pas un losange.");
         }
     }
 
@@ -32,14 +32,26 @@ public class Losange extends Quadrilatere {
     }
 
     private boolean isValidShape(){
-        // Vérifier les côtés sont de même longueur
-        if (sommet[0].calculerDistance(sommet[1]) != sommet[1].calculerDistance(sommet[2]) ||
-                sommet[1].calculerDistance(sommet[2]) != sommet[2].calculerDistance(sommet[3]) ||
-                sommet[2].calculerDistance(sommet[3]) != sommet[3].calculerDistance(sommet[0])) {
-            return false;
-        }
-        // Vérifier les diagonales se coupent au milieu
-        return sommet[0].calculerDistance(sommet[2]) == sommet[1].calculerDistance(sommet[3]);
+        double side1 = sommet[0].calculerDistance(sommet[1]);
+        double side2 = sommet[1].calculerDistance(sommet[2]);
+        double side3 = sommet[2].calculerDistance(sommet[3]);
+        double side4 = sommet[3].calculerDistance(sommet[0]);
+
+        double angleA = InterPoint.angle(sommet[3], sommet[0], sommet[1]);
+        double angleB = InterPoint.angle(sommet[0], sommet[1], sommet[2]);
+        double angleC = InterPoint.angle(sommet[1], sommet[2], sommet[3]);
+        double angleD = InterPoint.angle(sommet[2], sommet[3], sommet[0]);
+
+        System.out.println("angleA: " + angleA);
+        System.out.println("angleB: " + angleB);
+        System.out.println("angleC: " + angleC);
+        System.out.println("angleD: " + angleD);
+
+        return side1 == side2
+                && side2 == side3
+                && side3 == side4
+                && angleA == angleC
+                && angleB == angleD;
     }
 
     @Override

@@ -3,6 +3,8 @@ package mtx.dev.tp1javafx;
 public interface InterPoint {
     double getX();
     double getY();
+    void setY(double y);
+    void setX(double x);
     void afficher();
     double calculerDistance(InterPoint autrePoint);
     static double angle(InterPoint A, InterPoint B, InterPoint C) {

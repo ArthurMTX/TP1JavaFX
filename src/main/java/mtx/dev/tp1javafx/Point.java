@@ -1,8 +1,8 @@
 package mtx.dev.tp1javafx;
 
 public class Point implements InterPoint {
-    private final double x;
-    private final double y;
+    private double x;
+    private double y;
 
     public Point(double x, double y) {
         this.x = x;
@@ -15,6 +15,14 @@ public class Point implements InterPoint {
 
     public double getY() {
         return y;
+    }
+
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    public void setY(double y) {
+        this.y = y;
     }
 
     public void afficher() {

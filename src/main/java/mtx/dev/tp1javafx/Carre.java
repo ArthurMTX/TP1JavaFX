@@ -1,10 +1,6 @@
 package mtx.dev.tp1javafx;
 
 public class Carre extends Quadrilatere {
-    private final double longueurCote;
-    private final double longueurCote2;
-    private final double longueurCote3;
-    private final double longueurCote4;
     private final InterPoint[] sommet;
 
     public Carre(InterPoint point1, InterPoint point2, InterPoint point3, InterPoint point4) {
@@ -15,25 +11,31 @@ public class Carre extends Quadrilatere {
         sommet[1] = point2;
         sommet[2] = point3;
         sommet[3] = point4;
-
-        // Calculer la longueur du côté
-        longueurCote = point1.calculerDistance(point2);
-        longueurCote2 = point2.calculerDistance(point3);
-        longueurCote3 = point3.calculerDistance(point4);
-        longueurCote4 = point4.calculerDistance(point1);
-
-        if (!isValidShape()) {
-            //throw new IllegalArgumentException("Les points ne forment pas un carré.");
-        }
     }
 
-    public Double calculerAire() {
-        return longueurCote * longueurCote;
-    }
+    public boolean isValidShape(){
+        double side1 = sommet[0].calculerDistance(sommet[1]);
+        double side2 = sommet[1].calculerDistance(sommet[2]);
+        double side3 = sommet[2].calculerDistance(sommet[3]);
+        double side4 = sommet[3].calculerDistance(sommet[0]);
 
-    private boolean isValidShape(){
-        // Vérifier les tout les côtés sont de même longueur
-        return longueurCote == longueurCote2 && longueurCote2 == longueurCote3 && longueurCote3 == longueurCote4 && longueurCote4 == longueurCote;
+        double angleA = InterPoint.angle(sommet[3], sommet[0], sommet[1]);
+        double angleB = InterPoint.angle(sommet[0], sommet[1], sommet[2]);
+        double angleC = InterPoint.angle(sommet[1], sommet[2], sommet[3]);
+        double angleD = InterPoint.angle(sommet[2], sommet[3], sommet[0]);
+
+        System.out.println(angleA);
+        System.out.println(angleB);
+        System.out.println(angleC);
+        System.out.println(angleD);
+
+        return side1 == side2
+                && side2 == side3
+                && side3 == side4
+                && angleA == 90
+                && angleB == 90
+                && angleC == 90
+                && angleD == 90;
     }
 
     @Override
@@ -43,7 +45,7 @@ public class Carre extends Quadrilatere {
 
     @Override
     public String toString() {
-        return "Je suis un " + type().toLowerCase() + ". Mes quatre côtés ont tous la même longueur de " + longueurCote +
+        return "Je suis un " + type().toLowerCase() + ". Mes quatre côtés ont tous la même longueur de " + sommet[0].calculerDistance(sommet[1]) +
                 ". Mes sommets ont pour coordonnées " + coordonnees();
     }
 }

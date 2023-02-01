@@ -21,8 +21,13 @@ public class Quadrilatere {
 
     public String coordonnees() {
         StringBuilder sb = new StringBuilder();
+        int i = 1;
         for (InterPoint point : sommet) {
-            sb.append("(").append(point.getX()).append(",").append(point.getY()).append(") ");
+            sb.append((char) ('A' + i - 1)).append(" : ").append("(x : ").append(point.getX()).append(" ; ").append("y : ").append(point.getY()).append(") ");
+            if (i != sommet.length) {
+                sb.append("/ ");
+            }
+            i++;
         }
         return sb.toString();
     }
