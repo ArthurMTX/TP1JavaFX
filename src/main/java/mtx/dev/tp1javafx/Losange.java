@@ -1,11 +1,27 @@
 package mtx.dev.tp1javafx;
 
+/**
+ * Classe quadrilatère de type losange
+ * @see Quadrilatere
+ */
 public class Losange extends Quadrilatere {
+    /**
+     * Longueur du côté du losange
+     */
     private final double longueurCote;
-    private final InterPoint[] sommet;
-    private final double largeur;
-    private final double hauteur;
 
+    /**
+     * Tableau des sommets du losange
+     */
+    private final InterPoint[] sommet;
+
+    /**
+     * Constructeur de la classe Losange
+     * @param point1 Le point 1
+     * @param point2 Le point 2
+     * @param point3 Le point 3
+     * @param point4 Le point 4
+     */
     public Losange(InterPoint point1, InterPoint point2, InterPoint point3, InterPoint point4) {
         super(point1, point2, point3, point4);
 
@@ -17,21 +33,13 @@ public class Losange extends Quadrilatere {
 
         // Calculer la longueur du côté
         longueurCote = point1.calculerDistance(point2);
-
-        hauteur = point1.calculerDistance(point3);
-
-        largeur = point2.calculerDistance(point4);
-
-        if (!isValidShape()) {
-           throw new IllegalArgumentException("Les points ne forment pas un losange.");
-        }
     }
 
-    public Double calculerAire() {
-        return (largeur * hauteur) / 2;
-    }
-
-    private boolean isValidShape(){
+    /**
+     * Vérifie si le cerf-volant est valide en vérifiant que les côtés correspondants sont égaux et que les diagonales sont perpendiculaires
+     * @return true si le cerf-volant est valide, false sinon
+     */
+    public boolean isValidShape(){
         double side1 = sommet[0].calculerDistance(sommet[1]);
         double side2 = sommet[1].calculerDistance(sommet[2]);
         double side3 = sommet[2].calculerDistance(sommet[3]);
@@ -42,23 +50,25 @@ public class Losange extends Quadrilatere {
         double angleC = InterPoint.angle(sommet[1], sommet[2], sommet[3]);
         double angleD = InterPoint.angle(sommet[2], sommet[3], sommet[0]);
 
-        System.out.println("angleA: " + angleA);
-        System.out.println("angleB: " + angleB);
-        System.out.println("angleC: " + angleC);
-        System.out.println("angleD: " + angleD);
-
-        return side1 == side2
-                && side2 == side3
-                && side3 == side4
+        return side1 == side3
+                && side2 == side4
                 && angleA == angleC
                 && angleB == angleD;
     }
 
+    /**
+     * Retourne le type du losange
+     * @return La chaîne de caractères "Losange"
+     */
     @Override
     public String type() {
         return "Losange";
     }
 
+    /**
+     * Retourne un descriptif du losange, avec ses sommets et ses dimensions et son type
+     * @return La descriptif du losange
+     */
     @Override
     public String toString() {
         return "Je suis un " + type().toLowerCase() + ". Mes les côtés ont tous la même longueur de " + longueurCote +

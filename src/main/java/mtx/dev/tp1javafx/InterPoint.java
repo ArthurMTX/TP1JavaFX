@@ -1,8 +1,13 @@
 package mtx.dev.tp1javafx;
 
+/**
+ * Interface de point
+ */
 public interface InterPoint {
     double getX();
     double getY();
+    String getName();
+    void setName(String name);
     void setY(double y);
     void setX(double x);
     void afficher();
