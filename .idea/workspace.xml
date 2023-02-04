@@ -1,36 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="TP1JavaFX:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3487ad5e-7428-4292-a5f1-fcbcb7f7c626" name="Changes" comment="push de zinzin">
-      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Carre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Carre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/CerfVolant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/CerfVolant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/FabriquePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/FabriquePoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/FabriqueQuadrilatere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/FabriqueQuadrilatere.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/InterPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/InterPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Losange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Losange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Parallelogramme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Parallelogramme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Point2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Point2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Quadrilatere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Quadrilatere.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Trapeze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Trapeze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mtx/dev/tp1javafx/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mtx/dev/tp1javafx/index.fxml" beforeDir="false" />
+    <list default="true" id="3487ad5e-7428-4292-a5f1-fcbcb7f7c626" name="Changes" comment="added javadoc comments">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/TP1JavaFX_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Launcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,17 +48,22 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Program Files/Java/javafx-jmods-11",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Global Libraries",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.17356321",
+    "project.structure.side.proportion": "0.33919904",
     "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   }
@@ -82,7 +82,7 @@
       <workItem from="1675367494449" duration="8888000" />
       <workItem from="1675448028675" duration="6481000" />
       <workItem from="1675508164669" duration="8000" />
-      <workItem from="1675508195633" duration="11276000" />
+      <workItem from="1675508195633" duration="13843000" />
     </task>
     <task id="LOCAL-00001" summary="push de zinzin">
       <created>1675282460064</created>
@@ -91,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675282460064</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added javadoc comments">
+      <created>1675527252036</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675527252036</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,7 +117,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="push de zinzin" />
-    <option name="LAST_COMMIT_MESSAGE" value="push de zinzin" />
+    <MESSAGE value="added javadoc comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="added javadoc comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
