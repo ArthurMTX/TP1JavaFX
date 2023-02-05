@@ -87,7 +87,7 @@ public class Main extends Application{
             textFields[i] = new TextField();
             textFields[i].setLayoutX(10);
             textFields[i].setLayoutY(40 + 30 * i);
-            textFields[i].setPromptText("Point " + (char)('A' + i));
+            textFields[i].setPromptText("Point " + (char)('A' + i) + " (x;y)");
         }
 
         // Création du bouton qui permet de choisir la couleur du quadrilatère
