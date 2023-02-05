@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="TP1JavaFX:jar" />
+      <artifact name="TP1JavaFX:jar2" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3487ad5e-7428-4292-a5f1-fcbcb7f7c626" name="Changes" comment="added javadoc comments">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/TP1JavaFX_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Launcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+    <list default="true" id="3487ad5e-7428-4292-a5f1-fcbcb7f7c626" name="Changes" comment="commit de zinzin">
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uml.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,18 +56,27 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Program Files/Java/javafx-jmods-11",
+    "last_opened_file_path": "C:/Users/itsmi/OneDrive/Bureau/Cours/4. IMT/S5/5.4 Language objet/TP1Java/TP1JavaFX/src/main/java/mtx/dev/tp1javafx",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Artifacts",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.33919904",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\itsmi\OneDrive\Bureau\Cours\4. IMT\S5\5.4 Language objet\TP1Java\TP1JavaFX" />
+    </key>
+    <key name="ImportExportFile.TargetDir.RECENT_KEYS">
+      <recent name="C:\Users\itsmi\OneDrive\Bureau\Cours\4. IMT\S5\5.4 Language objet\TP1Java\TP1JavaFX\src\main\java\mtx\dev\tp1javafx" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -82,7 +91,8 @@
       <workItem from="1675367494449" duration="8888000" />
       <workItem from="1675448028675" duration="6481000" />
       <workItem from="1675508164669" duration="8000" />
-      <workItem from="1675508195633" duration="13843000" />
+      <workItem from="1675508195633" duration="19754000" />
+      <workItem from="1675611594683" duration="3291000" />
     </task>
     <task id="LOCAL-00001" summary="push de zinzin">
       <created>1675282460064</created>
@@ -98,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675527252036</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit de zinzin">
+      <created>1675529872845</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675529872845</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,7 +135,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="push de zinzin" />
     <MESSAGE value="added javadoc comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="added javadoc comments" />
+    <MESSAGE value="commit de zinzin" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit de zinzin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
