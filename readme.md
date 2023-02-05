@@ -6,6 +6,8 @@
 - Version du compilateur : **Java SDK 17.0.2**
 - Classe principale : [Main.java](src/main/java/mtx/dev/tp1javafx/Main.java)
 - Classe de lancement : [App.java](src/main/java/mtx/dev/tp1javafx/Launcher.java)
+- Documentation : [JavaDoc](https://mtx.dev/tp1javafx)
+- GitHub : [ArthurMTX/TP1JavaFX](https://github.com/ArthurMTX/TP1JavaFX)
 
 ## Respect des consignes
 

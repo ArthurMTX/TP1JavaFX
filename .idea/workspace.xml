@@ -9,9 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3487ad5e-7428-4292-a5f1-fcbcb7f7c626" name="Changes" comment="commit de zinzin">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mtx/dev/tp1javafx/Main.java" afterDir="false" />
+    <list default="true" id="3487ad5e-7428-4292-a5f1-fcbcb7f7c626" name="Changes" comment="added authors names">
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.33919904",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
@@ -97,7 +96,7 @@
       <workItem from="1675448028675" duration="6481000" />
       <workItem from="1675508164669" duration="8000" />
       <workItem from="1675508195633" duration="19754000" />
-      <workItem from="1675611594683" duration="3934000" />
+      <workItem from="1675611594683" duration="4300000" />
     </task>
     <task id="LOCAL-00001" summary="push de zinzin">
       <created>1675282460064</created>
@@ -127,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675616303196</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added authors names">
+      <created>1675617033665</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675617033665</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +154,8 @@
     <MESSAGE value="push de zinzin" />
     <MESSAGE value="added javadoc comments" />
     <MESSAGE value="commit de zinzin" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit de zinzin" />
+    <MESSAGE value="added authors names" />
+    <option name="LAST_COMMIT_MESSAGE" value="added authors names" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
