@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3487ad5e-7428-4292-a5f1-fcbcb7f7c626" name="Changes" comment="added authors names">
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-    </list>
+    <list default="true" id="3487ad5e-7428-4292-a5f1-fcbcb7f7c626" name="Changes" comment="added docs URL" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +94,7 @@
       <workItem from="1675448028675" duration="6481000" />
       <workItem from="1675508164669" duration="8000" />
       <workItem from="1675508195633" duration="19754000" />
-      <workItem from="1675611594683" duration="4300000" />
+      <workItem from="1675611594683" duration="4685000" />
     </task>
     <task id="LOCAL-00001" summary="push de zinzin">
       <created>1675282460064</created>
@@ -133,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675617033665</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added docs URL">
+      <created>1675617454986</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675617454986</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +160,8 @@
     <MESSAGE value="added javadoc comments" />
     <MESSAGE value="commit de zinzin" />
     <MESSAGE value="added authors names" />
-    <option name="LAST_COMMIT_MESSAGE" value="added authors names" />
+    <MESSAGE value="added docs URL" />
+    <option name="LAST_COMMIT_MESSAGE" value="added docs URL" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

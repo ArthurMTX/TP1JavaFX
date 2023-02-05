@@ -21,7 +21,7 @@
   - redéfinition de `toString()` qui retourne le type du quadrilatère et ses coordonnées sous forme de chaîne de caractères.
   - redéfinition de `type()` qui retourne le type du quadrilatère sous forme de chaîne de caractères.
   - redéfinition de `affiche()` qui affiche le type du quadrilatère et ses coordonnées.
-- [x] **4/5.** Créer classe spécifique au programme [Main.java](src/main/java/mtx/dev/tp1javafx/Main.java) qui permet de créer des instances de ces classes et de les tester.
+- [x] **4/5.** Créer une classe spécifique au programme [Main.java](src/main/java/mtx/dev/tp1javafx/Main.java) qui permet de créer des instances de ces classes et de les tester.
 - [x] **6.** Créer une classe [Point2.java](src/main/java/mtx/dev/tp1javafx/Point2.java) qui permet de représenter un point polaire dans un plan.
 - [x] **7.** Créer une interface [InterPoint.java](src/main/java/mtx/dev/tp1javafx/InterPoint.java) que les classes [Point.java](src/main/java/mtx/dev/tp1javafx/Point.java) et [Point2.java](src/main/java/mtx/dev/tp1javafx/Point2.java) implémentent.
 - [x] **8.** Découplage des classes [Point.java](src/main/java/mtx/dev/tp1javafx/Point.java) et [Point2.java](src/main/java/mtx/dev/tp1javafx/Point2.java) de la classe [Quadrilatere.java](src/main/java/mtx/dev/tp1javafx/Quadrilatere.java) grâce à l'interface [InterPoint.java](src/main/java/mtx/dev/tp1javafx/InterPoint.java) et à la classe [FabriquePoint.java](src/main/java/mtx/dev/tp1javafx/FabriquePoint.java).
