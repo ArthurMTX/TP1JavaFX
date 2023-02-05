@@ -34,27 +34,32 @@
 
 ### Carre 
 
-Coordonnées à saisir : `0;0 0;10 10;10 10;0`
-
-### Rectangle
-
-Coordonnées à saisir : `0;0 0;10 20;10 20;0`
-
-### Parallélogramme
-
-Coordonnées à saisir : `0;0 0;10 20;20 20;10`
-
-### Losange
-
-Coordonnées à saisir : `0;0 0;10 10;20 20;10`
-
-### Trapèze
-
-Coordonnées à saisir : `0;0 0;10 20;20 20;10`
+###### Coordonnées à saisir : `A : 0;0` `B : 0;10` `C : 10;10` `D : 10;0`
 
 ### Cerf-volant
 
-Coordonnées à saisir : `0;0 0;10 10;20 20;10 20;0`
+###### Coordonnées à saisir : `A : 0;6` `B : 2;4` `C : 0;0` `D : -2;4`
+
+### Losange
+
+###### Coordonnées à saisir : `A : 0;0` `B : 4;6` `C : 8;0` `D : 4;-6`
+
+### Parallélogramme
+
+###### Coordonnées à saisir : `A : 0;0` `B : 0;5` `C : 10;10` `D : 10;5`
+
+### Quadrilatère
+
+###### Coordonnées à saisir : aucun contrôle
+
+### Rectangle
+
+###### Coordonnées à saisir : `A : 0;0` `B : 0;5` `C : 10;5` `D : 10;0`
+
+### Trapèze
+
+###### Coordonnées à saisir : `A : 0;0` `B : 8;0` `C : 6;8` `D : 2;8`
+
 
 ## Architecture du projet
 
