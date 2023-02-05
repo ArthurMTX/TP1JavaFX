@@ -1,6 +1,11 @@
 package mtx.dev.tp1javafx;
 
 /**
+ * @author Maxime MONET
+ * @author Arthur PALY
+ */
+
+/**
  * Classe quadrilatère de type losange
  * @see Quadrilatere
  */

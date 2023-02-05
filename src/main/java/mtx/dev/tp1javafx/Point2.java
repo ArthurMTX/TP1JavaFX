@@ -1,6 +1,11 @@
 package mtx.dev.tp1javafx;
 
 /**
+ * @author Maxime MONET
+ * @author Arthur PALY
+ */
+
+/**
  * Classe point représentant un point polaire dans un espace à 2 dimensions
  * @see InterPoint
  */

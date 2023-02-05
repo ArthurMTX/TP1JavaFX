@@ -1,6 +1,11 @@
 package mtx.dev.tp1javafx;
 
 /**
+ * @author Maxime MONET
+ * @author Arthur PALY
+ */
+
+/**
  * Interface de point
  */
 public interface InterPoint {

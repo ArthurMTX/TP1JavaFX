@@ -3,6 +3,11 @@ package mtx.dev.tp1javafx;
 import javafx.scene.paint.Color;
 
 /**
+ * @author Maxime MONET
+ * @author Arthur PALY
+ */
+
+/**
  * Classe représentant un quadrilatère quelconque
  */
 public class Quadrilatere {

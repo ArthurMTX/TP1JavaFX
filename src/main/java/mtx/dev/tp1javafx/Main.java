@@ -22,6 +22,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * @author Maxime MONET
+ * @author Arthur PALY
+ */
+
+/**
  * Classe principale de l'application
  * @see Application
  */
